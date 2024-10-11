@@ -1,32 +1,36 @@
 ## Content
+
 There are 6820 movies in the dataset (220 movies per year, 1986-2016). Each movie has the following attributes:
 
 - budget: the budget of a movie. Some movies don't have this, so it appears as 0
 
-- company: the production company
 
-- country: country of origin
++ Title: The title of the movie or TV series.
 
-- director: the director
++ Released_Year: The year the movie or TV series was released.
 
-- genre: main genre of the movie.
++ Runtime: The total runtime of the movie or TV series, usually given in minutes.
 
-- gross: revenue of the movie
++ Genre: The genre or categories the movie or TV series falls into, such as Action, Comedy, Drama, etc.
 
-- name: name of the movie
++ Rating: The rating of the movie or TV series on IMDb, typically on a scale from 1 to 10.
 
-- rating: rating of the movie (R, PG, etc.)
++ Meta_score: The Metascore from Metacritic, which aggregates reviews and gives a score from 0 to 100.
 
-- released: release date (YYYY-MM-DD)
++ Director: The director of the movie or TV series.
 
-- runtime: duration of the movie
++ Votes: The number of votes the movie or TV series has received on
 
-- score: IMDb user rating
++ Categorical Variables: Series_Title, Genre, Director
 
-- votes: number of user votes
++ Revenue (Millions) :
 
-- star: main actor/actress
++ Rank :
 
-- writer: writer of the movie
++ Description : 
 
-- year: year of release
++ Actors : main actor/actress
+
++ Years : year of release
+
++ Numerical Variable: Released_Year, Runtime, IMDB_Rating, Meta_score, No_of_Votes

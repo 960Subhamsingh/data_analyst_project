@@ -1,5 +1,8 @@
 ##  Diwali sales analysis
 
+
+"I created a Diwali sales data project using Excel And Jupyter, with interactive dashboards for clear visualization. This project analyzes sales trends and performance during the Diwali season, offering insights into customer behavior and sales patterns. The goal is to optimize marketing strategies and improve sales outcomes during the festive period."
+
 ## Tools Used
 For the data cleaning project, the following tools and libraries were used:
 
