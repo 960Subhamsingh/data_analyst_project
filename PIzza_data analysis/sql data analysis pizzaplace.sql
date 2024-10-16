@@ -47,14 +47,14 @@ select * from orders;
 select count(order_id) as Total_orders from orders;
 
 -- Calculate the total revenue generated from pizza sales
+
 select round(sum(order_details.quantity * pizzas.price),2) as Total_sales
 from order_details join pizzas on pizzas.pizza_id = order_details.pizza_id;
 
 -- Calculate the average order value
 
 select round((sum(order_details.quantity * pizzas.price)/ sum(order_details.quantity)) ,2)as Avg_order_value
-from order_details join pizzas on pizzas.pizza_id = order_details.pizza_id
-;
+from order_details join pizzas on pizzas.pizza_id = order_details.pizza_id;
 
 -- Identify the top 5 priced pizza
 
