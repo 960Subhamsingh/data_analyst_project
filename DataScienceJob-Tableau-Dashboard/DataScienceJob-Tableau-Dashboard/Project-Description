@@ -1,0 +1,73 @@
+Tableau Data Visualization Project
+Data Science Job Salaries Dashboard
+
+**Project Overview**:
+- Developed an interactive Tableau dashboard to analyze data science job salaries based on various factors using a dataset sourced from Kaggle.
+
+**Data Preparation**:
+- Imported and cleaned the CSV file `DS_salaries.csv`
+
+**Visualizations**:
+
+1. **Donut Chart: Total Companies by Size and Location**
+   - **Data Used**: Company size and company location.
+   - **Steps**:
+     - Dragged `Company Size` to Color and Size.
+     - Used Count to show the number of companies.
+     - Applied `Company Location` as a filter for interactivity.
+   - **Purpose**: Visualize the distribution of companies by size and location.
+
+2. **Donut Chart: Experience Level Distribution**
+   - **Data Used**: Experience level.
+   - **Steps**:
+     - Dragged `Experience Level` to Color and Size.
+     - Used Count to show the number of employees at each experience level.
+   - **Purpose**: Show the proportion of employees at different experience levels.
+
+3. **Donut Chart: Employment Type Distribution**
+   - **Data Used**: Employment type.
+   - **Steps**:
+     - Dragged `Employment Type` to Color and Size.
+     - Used Count to show the number of employees by employment type.
+   - **Purpose**: Display the distribution of employment types among employees.
+
+4. **Horizontal Bar Chart: Top 10 Employee Residences**
+   - **Data Used**: Employee residence.
+   - **Steps**:
+     - Placed `Employee Residence` on Rows and Count on Text.
+     - Sorted the data and limited it to the top 10.
+   - **Purpose**: Highlight the top 10 countries where employees reside.
+
+5. **Side-by-Side Circle Chart: Average Salary by Experience Level and Employment Type**
+   - **Data Used**: Experience level, employment type, and salary in USD.
+   - **Steps**:
+     - Placed `Experience Level` and `Employment Type` on Columns and Rows respectively.
+     - Used Average Salary (USD) for the size of the circles.
+   - **Purpose**: Compare average salaries across different experience levels and employment types.
+
+6. **Geographical Map: Average Salary by Country**
+   - **Data Used**: Company location (country) and salary in USD.
+   - **Steps**:
+     - Mapped `Company Location` to geographical role (country).
+     - Used Average Salary (USD) for color coding.
+   - **Purpose**: Show the average salary distribution across different countries.
+
+7. **Highlight Table: Average Salary by Job Title and Experience Level**
+   - **Data Used**: Job title, experience level, and salary in USD.
+   - **Steps**:
+     - Placed `Job Title` and `Experience Level` on Rows and Columns.
+     - Used Average Salary (USD) for cell shading.
+   - **Purpose**: Display average salaries by job title and experience level for detailed comparison.
+
+**Interactivity**:
+- Implemented filters for `Company Location` and `Job Title` across multiple charts to allow dynamic data exploration.
+- Enabled users to manipulate filters and see updated visualizations in real-time.
+
+**Dashboard Layout**:
+- Set dashboard resolution to 2100x1200 pixels for optimal viewing.
+- Arranged charts logically for easy navigation and readability.
+
+**Final Presentation**:
+- Ensured all visualizations are interactive and informative.
+- Applied consistent formatting to titles, borders, colors, and legends for a professional appearance.
+- Used annotations and labels to enhance clarity and user understanding.
