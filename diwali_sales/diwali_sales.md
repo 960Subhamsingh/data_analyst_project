@@ -5,7 +5,7 @@
 
 ## Excel Diwali sales Dashboard 
 
-[!(Diwali sales) (<>)
+[Excel dashboard](<./Diwali_sales Dashboard.png>)
 
 
 ## Tools Used
