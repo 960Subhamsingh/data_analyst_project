@@ -5,7 +5,7 @@
 
 ## Excel Diwali sales Dashboard 
 
-[Excel dashboard](<./Diwali_sales Dashboard.png>)
+![Excel dashboard](<./Diwali_sales Dashboard.png>)
 
 
 ## Tools Used
