@@ -1,0 +1,1228 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <ISO8601WeekNumbering_SP1 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='pizza_sales' inline='true' name='federated.1gvux3x1np5abe1c83h071gmevvl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pizza_sales' name='textscan.1c34ubg0127l9c1bvxmkp0iwe9vt'>
+            <connection class='textscan' directory='D:/Project/data_analyst_project/PIzza_data analysis' filename='pizza_sales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1c34ubg0127l9c1bvxmkp0iwe9vt' name='pizza_sales.csv' table='[pizza_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='pizza_id' ordinal='0' />
+            <column datatype='integer' name='order_id' ordinal='1' />
+            <column datatype='string' name='pizza_name_id' ordinal='2' />
+            <column datatype='integer' name='quantity' ordinal='3' />
+            <column datatype='date' name='order_date' ordinal='4' />
+            <column datatype='datetime' name='order_time' ordinal='5' />
+            <column datatype='real' name='unit_price' ordinal='6' />
+            <column datatype='real' name='total_price' ordinal='7' />
+            <column datatype='string' name='pizza_size' ordinal='8' />
+            <column datatype='string' name='pizza_category' ordinal='9' />
+            <column datatype='string' name='pizza_ingredients' ordinal='10' />
+            <column datatype='string' name='pizza_name' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1c34ubg0127l9c1bvxmkp0iwe9vt' name='pizza_sales.csv' table='[pizza_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='pizza_id' ordinal='0' />
+            <column datatype='integer' name='order_id' ordinal='1' />
+            <column datatype='string' name='pizza_name_id' ordinal='2' />
+            <column datatype='integer' name='quantity' ordinal='3' />
+            <column datatype='date' name='order_date' ordinal='4' />
+            <column datatype='datetime' name='order_time' ordinal='5' />
+            <column datatype='real' name='unit_price' ordinal='6' />
+            <column datatype='real' name='total_price' ordinal='7' />
+            <column datatype='string' name='pizza_size' ordinal='8' />
+            <column datatype='string' name='pizza_category' ordinal='9' />
+            <column datatype='string' name='pizza_ingredients' ordinal='10' />
+            <column datatype='string' name='pizza_name' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pizza_id]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_name_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_name_id]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_name_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quantity]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>quantity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[order_date]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>order_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[order_time]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>order_time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unit_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[unit_price]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>unit_price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_price]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>total_price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_size]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_size</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_category]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_ingredients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_ingredients]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_ingredients</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pizza_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pizza_name]</local-name>
+            <parent-name>[pizza_sales.csv]</parent-name>
+            <remote-alias>pizza_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total_Revenue ' datatype='real' name='[Calculation_716635306735915008]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([total_price])' />
+      </column>
+      <column caption='Average Order Value' datatype='real' name='[Calculation_716635306736123905]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([total_price])/sum([order_id])' />
+      </column>
+      <column caption='Total Pizzas Sold ' datatype='integer' name='[Calculation_716635306736750594]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([quantity])' />
+      </column>
+      <column caption='Total Orders' datatype='integer' name='[Calculation_716635306736951299]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([order_id])' />
+      </column>
+      <column caption='Average Pizzas per Order' datatype='real' name='[Calculation_716635306737631236]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_716635306736750594]/[Calculation_716635306736951299]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='pizza_sales.csv' datatype='table' name='[__tableau_internal_object_id__].[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]' role='measure' type='quantitative' />
+      <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+      <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+      <column caption='Order Time' datatype='datetime' name='[order_time]' role='dimension' type='ordinal' />
+      <column caption='Pizza Category' datatype='string' name='[pizza_category]' role='dimension' type='nominal' />
+      <column caption='Pizza Id' datatype='integer' name='[pizza_id]' role='dimension' type='ordinal' />
+      <column caption='Pizza Ingredients' datatype='string' name='[pizza_ingredients]' role='dimension' type='nominal' />
+      <column caption='Pizza Name' datatype='string' name='[pizza_name]' role='dimension' type='nominal' />
+      <column caption='Pizza Name Id' datatype='string' name='[pizza_name_id]' role='dimension' type='nominal' />
+      <column caption='Pizza Size' datatype='string' name='[pizza_size]' role='dimension' type='nominal' />
+      <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+      <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+      <column caption='Unit Price' datatype='real' name='[unit_price]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hp/AppData/Local/Temp/TableauTemp/#TableauTemp_13ra6b80lk35h11304ehs0y5f2hx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/18/2024 09:55:30 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>pizza_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pizza_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48620</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17137</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_name_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_name_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_name_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quantity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[order_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[order_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>13570</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unit_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[unit_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unit_price</remote-alias>
+              <ordinal>6</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_price</remote-alias>
+              <ordinal>7</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_size</remote-alias>
+              <ordinal>8</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_category</remote-alias>
+              <ordinal>9</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_ingredients</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_ingredients]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_ingredients</remote-alias>
+              <ordinal>10</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pizza_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pizza_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pizza_name</remote-alias>
+              <ordinal>11</ordinal>
+              <family>pizza_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306745876486:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306745905160:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='pizza_sales.csv' id='pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449'>
+            <properties context=''>
+              <relation connection='textscan.1c34ubg0127l9c1bvxmkp0iwe9vt' name='pizza_sales.csv' table='[pizza_sales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='pizza_id' ordinal='0' />
+                  <column datatype='integer' name='order_id' ordinal='1' />
+                  <column datatype='string' name='pizza_name_id' ordinal='2' />
+                  <column datatype='integer' name='quantity' ordinal='3' />
+                  <column datatype='date' name='order_date' ordinal='4' />
+                  <column datatype='datetime' name='order_time' ordinal='5' />
+                  <column datatype='real' name='unit_price' ordinal='6' />
+                  <column datatype='real' name='total_price' ordinal='7' />
+                  <column datatype='string' name='pizza_size' ordinal='8' />
+                  <column datatype='string' name='pizza_category' ordinal='9' />
+                  <column datatype='string' name='pizza_ingredients' ordinal='10' />
+                  <column datatype='string' name='pizza_name' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pizza_sales' name='federated.1gvux3x1np5abe1c83h071gmevvl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gvux3x1np5abe1c83h071gmevvl'>
+            <column caption='Total_Revenue ' datatype='real' name='[Calculation_716635306735915008]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_price])' />
+            </column>
+            <column caption='Average Order Value' datatype='real' name='[Calculation_716635306736123905]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([total_price])/sum([order_id])' />
+            </column>
+            <column caption='Total Pizzas Sold ' datatype='integer' name='[Calculation_716635306736750594]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([quantity])' />
+            </column>
+            <column caption='Total Orders' datatype='integer' name='[Calculation_716635306736951299]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([order_id])' />
+            </column>
+            <column caption='Average Pizzas per Order' datatype='real' name='[Calculation_716635306737631236]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_716635306736750594]/[Calculation_716635306736951299]' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='pizza_sales.csv' datatype='integer' name='[__tableau_internal_object_id__].[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='pizza_sales.csv' datatype='table' name='[__tableau_internal_object_id__].[pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449]' role='measure' type='quantitative' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+            <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_716635306735915008]' derivation='User' name='[usr:Calculation_716635306735915008:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_716635306736123905]' derivation='User' name='[usr:Calculation_716635306736123905:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_716635306736750594]' derivation='User' name='[usr:Calculation_716635306736750594:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_716635306736951299]' derivation='User' name='[usr:Calculation_716635306736951299:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_716635306737631236]' derivation='User' name='[usr:Calculation_716635306737631236:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gvux3x1np5abe1c83h071gmevvl].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736951299:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306735915008:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1gvux3x1np5abe1c83h071gmevvl].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306735915008:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736123905:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306737631236:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[__tableau_internal_object_id__].[cnt:pizza_sales.csv_B11FB54311D84368B9ACA27DD8475449:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736951299:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1gvux3x1np5abe1c83h071gmevvl].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1gvux3x1np5abe1c83h071gmevvl].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1gvux3x1np5abe1c83h071gmevvl].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F161EFB7-EC73-4DA3-A359-6C60E40C2FDC}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Hourly trend for Total Pizza Field</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pizza_sales' name='federated.1gvux3x1np5abe1c83h071gmevvl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gvux3x1np5abe1c83h071gmevvl'>
+            <column caption='Total Pizzas Sold ' datatype='integer' name='[Calculation_716635306736750594]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([quantity])' />
+            </column>
+            <column-instance column='[order_time]' derivation='Hour' name='[hr:order_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[pizza_category]' derivation='None' name='[none:pizza_category:nk]' pivot='key' type='nominal' />
+            <column caption='Order Time' datatype='datetime' name='[order_time]' role='dimension' type='ordinal' />
+            <column caption='Pizza Category' datatype='string' name='[pizza_category]' role='dimension' type='nominal' />
+            <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_716635306736750594]' derivation='User' name='[usr:Calculation_716635306736750594:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1gvux3x1np5abe1c83h071gmevvl].[none:pizza_category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <text column='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk] + [federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736750594:qk])</rows>
+        <cols>[federated.1gvux3x1np5abe1c83h071gmevvl].[hr:order_time:ok]</cols>
+      </table>
+      <simple-id uuid='{E3D05835-0EBE-49E8-B45C-802F6D53DB2C}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pizza_sales' name='federated.1gvux3x1np5abe1c83h071gmevvl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gvux3x1np5abe1c83h071gmevvl'>
+            <column caption='Total Orders' datatype='integer' name='[Calculation_716635306736951299]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([order_id])' />
+            </column>
+            <column-instance column='[order_date]' derivation='ISO-Week' name='[iwk:order_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_716635306736951299]' derivation='User' name='[usr:Calculation_716635306736951299:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736951299:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736951299:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736951299:qk] + [federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736951299:qk])</rows>
+        <cols>[federated.1gvux3x1np5abe1c83h071gmevvl].[iwk:order_date:ok]</cols>
+      </table>
+      <simple-id uuid='{A128A8C0-E759-4964-A7DF-04E3F93D14F4}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pizza_sales' name='federated.1gvux3x1np5abe1c83h071gmevvl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gvux3x1np5abe1c83h071gmevvl'>
+            <column caption='Total_Revenue ' datatype='real' name='[Calculation_716635306735915008]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_price])' />
+            </column>
+            <column caption='Total Orders' datatype='integer' name='[Calculation_716635306736951299]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([order_id])' />
+            </column>
+            <column caption='avg(0)' datatype='real' name='[Calculation_716635306745876486]' role='measure' type='quantitative' user:unnamed='Sheet 4'>
+              <calculation class='tableau' formula='avg(0)' />
+            </column>
+            <column caption='avg(0)' datatype='real' name='[Calculation_716635306745905160]' role='measure' type='quantitative' user:unnamed='Sheet 4'>
+              <calculation class='tableau' formula='avg(0)' />
+            </column>
+            <column-instance column='[Calculation_716635306735915008]' derivation='User' name='[cum:usr:Calculation_716635306735915008:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[pizza_category]' derivation='None' name='[none:pizza_category:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+            <column caption='Pizza Category' datatype='string' name='[pizza_category]' role='dimension' type='nominal' />
+            <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_716635306736951299]' derivation='User' name='[usr:Calculation_716635306736951299:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_716635306745876486]' derivation='User' name='[usr:Calculation_716635306745876486:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_716635306745905160]' derivation='User' name='[usr:Calculation_716635306745905160:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306745905160:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306745876486:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1gvux3x1np5abe1c83h071gmevvl].[none:pizza_category:nk]' />
+              <wedge-size column='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306736951299:qk]' />
+              <text column='[federated.1gvux3x1np5abe1c83h071gmevvl].[none:pizza_category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.066298246383667' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306745905160:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1gvux3x1np5abe1c83h071gmevvl].[:Measure Names]' />
+              <text column='[federated.1gvux3x1np5abe1c83h071gmevvl].[cum:usr:Calculation_716635306735915008:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='size' value='1.3293370008468628' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306745876486:qk] + [federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306745905160:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{A54AB0AE-FBDC-48DC-AB5D-1CF1CE64B1E8}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pizza_sales' name='federated.1gvux3x1np5abe1c83h071gmevvl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gvux3x1np5abe1c83h071gmevvl'>
+            <column caption='Total_Revenue ' datatype='real' name='[Calculation_716635306735915008]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_price])' />
+            </column>
+            <column-instance column='[pizza_size]' derivation='None' name='[none:pizza_size:nk]' pivot='key' type='nominal' />
+            <column caption='Pizza Size' datatype='string' name='[pizza_size]' role='dimension' type='nominal' />
+            <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_716635306735915008]' derivation='User' name='[usr:Calculation_716635306735915008:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306735915008:qk]' included-values='in-range'>
+            <min>1006.6000000000005</min>
+          </filter>
+          <slices>
+            <column>[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306735915008:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gvux3x1np5abe1c83h071gmevvl].[none:pizza_size:nk]</rows>
+        <cols>[federated.1gvux3x1np5abe1c83h071gmevvl].[usr:Calculation_716635306735915008:qk]</cols>
+      </table>
+      <simple-id uuid='{5FDD619D-AA3E-4382-8FAB-21196112A0DD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='7' param='vert' type-v2='layout-flow' w='99000' x='500' y='889' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C6893979-AEA1-43DE-8C0B-E1B08C47C18B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FB04498B-0A5A-4715-BE11-7F85958206DF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{7521395D-5C72-439B-A8F2-15213AADCDB7}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1gvux3x1np5abe1c83h071gmevvl].[none:pizza_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3CE7012A-2BF0-41FA-90AB-8436AF14DBD2}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E4AE2CC0-27C6-43BC-9F1A-C670A7312156}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1gvux3x1np5abe1c83h071gmevvl].[:Measure Names]' type='color' />
+            <card pane-specification-id='1' param='[federated.1gvux3x1np5abe1c83h071gmevvl].[none:pizza_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{770C0A35-2C1A-47BB-8C92-5F6E52123497}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9C144D10-EBD3-4F4E-A7FC-218B792F7A69}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
