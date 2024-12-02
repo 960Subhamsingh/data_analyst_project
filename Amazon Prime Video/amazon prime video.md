@@ -1,6 +1,6 @@
 ## Amazon Prime Video Data Analysis Project
 ## Project Overview
-Amazon Prime Video is a globally renowned media and video streaming platform, offering a vast library of content, including movies and TV shows. As of mid-2021, the platform boasts over 10,000 titles and serves more than 200 million subscribers worldwide. This project delves into the extensive dataset of Amazon Prime's content catalog to gain valuable insights and present these findings in an interactive Power BI dashboard.
+Amazon Prime Video is a globally renowned media and video streaming platform, offering a vast library of content, including movies and TV shows. As of mid-2021, the platform boasts over 10,000 titles and serves more than 200 million subscribers worldwide. This project delves into the extensive dataset of Amazon Prime's content catalog to gain valuable insights and present these findings in an interactive Power BI , Tableau dashboard.
 
 Project Purpose
 
@@ -39,3 +39,9 @@ IMDb Ratings: A breakdown of content by IMDb ratings, enabling us to discern tre
 Historical Trends: Analysis of content trends over the years, including the distribution of content by release year.
 
 Top Contributors: Identification of top directors, cast members, and other key contributors to the content library.
+
+## Dashboard
+ - Powerbi
+ - Tableau
+ - Streamlit
+ 
